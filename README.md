@@ -1,18 +1,16 @@
-# В разработке
+# In Development
 
-Telegram-бота, который помогает отслеживать цены на товары с различных онлайн-магазинов (Amazon, Aliexpress, eBay, Wildberries).
-Бот написан на Python и использует библиотеку aiogram для взаимодействия с Telegram API. Проект также включает асинхронную работу
-с базой данных с использованием SQLAlchemy и aiohttp для выполнения HTTP-запросов.
+A Telegram bot that helps track prices for products from various online stores (Amazon, Aliexpress, eBay, Wildberries).  
+The bot is written in Python and uses the `aiogram` library to interact with the Telegram API.  
+The project also includes asynchronous database operations using `SQLAlchemy` and `aiohttp` for making HTTP requests.
 
-# В планах:
-- преписать проект на микросервисную архитектуру
-- sqllite используеться как теставая db, заменить на Postgree
-- добавить очереди для обновления цен, при помощи celery и редис
-- добавить возможность ресовать графики изменения цен
+# Plans:
+- Refactor the project to a microservice architecture.
+- Replace SQLite (used as a test database) with PostgreSQL.
+- Add queues for price updates using `Celery` and `Redis`.
+- Implement the ability to generate price trend graphs.
 
-
-
-## Зависимости:
+## Dependencies:
 - Python 3.11.0
 - aiogram 3.3.0
 - python-dotenv 1.0.0
